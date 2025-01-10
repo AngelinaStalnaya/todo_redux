@@ -1,7 +1,9 @@
+import AddTodoForm from './components/AddTodoForm';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
+      <AddTodoForm/>
     </div>
   );
 }
