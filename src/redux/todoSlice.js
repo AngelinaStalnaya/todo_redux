@@ -21,6 +21,9 @@ export const todoSlice = createSlice({
         toggleCompleteTodo: (state, action) => {
             const index = state.findIndex((todo) => todo.id === action.payload.id);
             state[index].completed = action.payload.completed;
+        },
+        deleteTodo: (state, action) => {
+            return state.filter((todo) => todo.id !== action.payload.id);
         }
     },
 });
