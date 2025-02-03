@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "ToDo App",
-  description: "Todo list tasks with timer",
+  description: "Todo list with timer",
 };
 
 export default function RootLayout({
@@ -27,7 +27,17 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="grid grid-rows-[80px_1fr_80px] items-center justify-items-center min-h-screen p-8 pb-10 gap-8 sm:p-12 font-[family-name:var(--font-geist-sans)]">
+          <header className="flex row-start-1 items-center justify-center flex-wrap gap-6">
+            Header with auth
+          </header>
+          <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+            {children}
+          </main>
+          <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+            Footer with statistics
+          </footer>
+        </div>
       </body>
     </html>
   );
