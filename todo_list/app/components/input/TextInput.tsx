@@ -8,6 +8,7 @@ const TextInput = () => {
 
     const handleTextInput = (e: { target: { value: SetStateAction<string>; }; }) => {
         setInputValue(e.target.value)
+        
     }
 
     return (

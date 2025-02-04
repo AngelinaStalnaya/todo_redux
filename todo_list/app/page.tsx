@@ -4,13 +4,16 @@ import Button from "./components/button/Button"
 import CheckboxInputList from "./components/input/CheckboxInputList";
 
 const todos = [
-  {id: '34',
+  {
+    id: '34',
     text: 'ergrtgrth'
-  }, 
-  {id:'345',
-    text:'56467'
   },
-  {id: '97',
+  {
+    id: '345',
+    text: '56467'
+  },
+  {
+    id: '97',
     text: '856456ghnbtrge'
   }
 ]
@@ -18,7 +21,7 @@ const todos = [
 export default function Home() {
   return (
     <>
-      <CheckboxInput text='1st todo'/>
+      <CheckboxInput text='1st todo' />
       {/* <CheckboxInput text='2nd todo'/>
       <CheckboxInput text='3rd todo'/>
       <CheckboxInput text='4th todo'/>   */}
@@ -26,7 +29,7 @@ export default function Home() {
       <TextInput />
       <Button>Click me</Button>
 
-      <CheckboxInputList todos={todos}/>
+      <CheckboxInputList todos={todos} />
     </>
   )
 }
