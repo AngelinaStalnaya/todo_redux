@@ -31,7 +31,7 @@ export default function RootLayout({
           <header className="flex row-start-1 items-center justify-center flex-wrap gap-6">
             Header with auth
           </header>
-          <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+          <main className="flex flex-col row-start-2 items-center sm:items-start">
             {children}
           </main>
           <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
