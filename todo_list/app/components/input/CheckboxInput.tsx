@@ -18,7 +18,7 @@ const CheckboxInput = ({ text, id }: CheckboxInputProps) => {
 
   return (
 
-    <label className="flex flex-row-reverse gap-2">{text}
+    <label className="flex flex-row-reverse gap-2 hover:text-blue-700 transition-all">{text}
       <input type="checkbox" checked={done} id={id} onChange={handleCheckInputClick} 
       className="flex text-xl text-blue-700 hover:text-purple-900" />
     </label>

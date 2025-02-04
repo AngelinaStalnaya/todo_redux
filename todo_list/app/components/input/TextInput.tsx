@@ -12,9 +12,9 @@ const TextInput = () => {
 
     return (
         <>
-            <label htmlFor='text_input' className='flex'>Enter new Todo</label>
+            <label htmlFor='text_input' className='flex text-blue-700 text-sm mb-1'>Enter new Todo:</label>
             <input id='text_input' type='text' onChange={handleTextInput} value={inputValue}
-                className="flex min-w-[150px] text-blue-700 hover:text-purple-900 text-xl bg-transparent rounded-md p-2 border border-blue-700 hover:border-purple-900" />
+                className="flex min-w-[150px] text-blue-700 hover:text-purple-900 text-xl bg-transparent rounded-md p-2 border border-blue-700 hover:border-purple-900 transition-all mb-5" />
         </>
     )
 }
