@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-interface CheckboxInputProps {
+export interface CheckboxInputProps {
   id?: string | undefined;
   text: string;
 }
